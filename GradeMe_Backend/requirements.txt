@@ -1,0 +1,9 @@
+django
+djangorestframework
+django-pyodbc
+django-pyodbc-azure
+pyjwt
+django-storages
+azure-storage==0.20.0
+Django-cors-headers
+passlib

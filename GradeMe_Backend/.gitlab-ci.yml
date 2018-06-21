@@ -1,0 +1,5 @@
+image:
+  localhost:5000/my_image
+test:
+  script:
+    - python3 manage.py test --no-input

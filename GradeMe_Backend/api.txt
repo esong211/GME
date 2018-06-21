@@ -1,0 +1,49 @@
+Api calls:
+
+Location: UserViewSet.assignments_due_week
+How to use: Get request to /user/id/assignments_due_week/
+Description: Gets all the assignment due within the next week for the user with user id. Returns a list of assignment serialized objects.
+
+Location: UserViewSet.get_course
+How to use: Get request to /user/id/get_course/
+Description: Gets all the courses that a user is a student of, ta of, and instructor of. Maps 'student' to a list of courses, 'ta' to a list of courses, and 'instructor' to a list of courses.
+
+Location: UserViewSet.authenticate
+How to use: Post request to /user/authenticate/ with 'email' and 'password'
+Description: Post the email and password of the user. Checks to see if they are valid (returns 'No such user' or 'Invalid password' error), and returns the user's first name and a token encoding their id and email.
+
+Location: UserViewSet.encode_token
+How to use: Post request to /user/encode_token/ with whatever data to store in token
+Description: Post any body, and returns with a jwt encoded token of the data.
+
+Location: UserViewSet.decode_token
+How to use: Post request to /user/decode_token/ with 'token'
+Description: Returns the decoded token. If incorrectly signed, returns 'invalid token'
+
+Location: UserViewSet.create
+How to use: Post request to /user/ with email, first_name, last_name, password, color_pref, and school
+Description: Creates a user. Overrides the default create to hash the password.
+
+Location: UserViewSet.change_password
+How to use: Put request to /user/change_password/ with email, old_password, new_password
+Description: Changes the password of user email from old to new password. Returns 201 on success, and 'No such user' or 'Invalid password' if old_password is incorrect.
+
+Location: CourseViewSet.get_assignments
+How to use: Get request to /course/id/get_assignments/
+Description: Gets all the assignments for course with id
+
+Location: SubmissionViewSet.get_submissions
+How to use: Post request to /submission/get_submissions/ with userid and/or assignmentid or neither.
+Description: Gets all submissions filtered by one, both, or none of userid and assignmentid.
+
+Location: CourseViewSet.get_users
+How to use: Get request to /course/<id>/get_users/
+Description: Gets all users (tas, instructors, users) registered with courseid.
+
+Location: CourseViewSet.save_course
+How to use: Post request to /course/<id>/save_course/ with course_name (string), course_description (string), students (string of emails), tas (string of emails), and regenerate_access (bool). All of these are optional, and if not passed, nothing will occur.
+Description: Updates the course name and description. Finds all new and removed students and tas and remove them. If regenerate_access, recreates access codes.
+
+Location: UserViewSet.join_course
+How to use: Post request to /user/<id>/join_course/ with access_code (string)
+Description: Adds the user to the course given by access_code (also encodes student/ta), or returns an error if invalid.
