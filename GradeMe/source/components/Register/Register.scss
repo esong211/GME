@@ -1,0 +1,49 @@
+.Register {
+    color: #3c4e52;
+    margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.wrapper-register{
+  	height: 100vh;
+	position: relative;
+	background-color: #039be5;
+
+}
+.Register__content{
+	margin: 0;
+    padding: 20px !important;
+}
+
+#button-blue {
+	background-color: #48E0CD;
+}
+.pad{
+	padding-bottom: 10px;
+	padding-top: 10px;
+	width: 100%;
+}
+.hidden { 
+	display:none; 
+}
+
+.dropdown__label{
+	height : 38px;
+	float : left;
+	font-size: 1em !important;
+	font-weight: 700 !important;
+}
+.dropdown__label__detail{
+	margin-left: 0 !important;
+	font-size: 1em;
+	line-height: 20px;
+}
+.dropdown__menu{
+	display: inline-block !important;
+	width: 64% !important;
+}
+

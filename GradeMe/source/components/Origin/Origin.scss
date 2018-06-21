@@ -1,0 +1,116 @@
+.theme-blue{
+  background-color: #039be5;
+  color: #039be5;
+}
+
+#logo{
+  color:#48E0CD !important;
+  font-size: 30px;
+  margin-left: -16%;
+}
+
+.ui.cards {
+  margin-top: 20px;
+}
+
+.add-create {
+  .our-icon{
+    padding-top: 10% !important;
+    padding-bottom: 10% !important;
+  }
+
+  header {
+    margin-top: 20px;
+  }
+}
+.addClass{
+  width: 50px;
+}
+
+.modalContent{
+  width: 100% !important;
+}
+
+.modalButton{
+  margin: 1px !important;
+}
+
+.modalInput{
+  width: 80% !important;
+  margin: 0 auto 0 auto !important;
+  label{
+    max-width: 30% !important;
+  }
+  input{
+    max-width: 70% !important;
+  }
+}
+
+.cards-container {
+  display: flex;
+  justify-content: left !important;
+  margin: 0 auto 0 auto !important;
+}
+
+Card {
+  margin: 10px !important;
+}
+
+#Grade-Pos{
+  position: fixed;
+  overflow: hidden;
+  bottom:15%;
+  left: 15%;
+
+}
+
+#Grade-Size{
+  position: fixed;
+  margin-left: 16%;
+  margin-top: 2%;
+
+
+}
+
+.card-element {
+  margin: .875em .5em !important;
+}
+
+.p-10 {
+  padding-right: 5px;
+}
+
+
+#invalid-course-id {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dimmed.dimmable > .ui.animating.dimmer, .dimmed.dimmable > .ui.visible.dimmer, .ui.active.dimmer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ui.modal,
+.ui.active.modal {
+  margin: 0 auto !important;
+  top: auto !important;
+  left: auto !important;
+  transform-origin: center !important;
+  transition: all ease .5s;
+}
+
+.courses_group{
+  height: 100%;
+}
+
+.assignment-container{
+  height: 100%;
+  margin: 8px;
+  padding-bottom: 20px;
+}
+
+.createCard {
+  margin: auto !important;
+  padding-top: 14% !important;
+}

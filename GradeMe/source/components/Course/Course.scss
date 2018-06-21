@@ -1,0 +1,94 @@
+#theme-blue{
+	background-color: #039be5;
+}
+
+#logo{
+	color:#039be5 !important;
+	font-size: 30px;
+	margin-left: -16%;
+}
+
+.ui.cards {
+	margin-top: 20px;
+}
+
+.general_input {
+	margin: 10px;
+}
+
+.add-create {
+	.our-icon{
+		padding-top: 10% !important;
+		padding-bottom: 10% !important;
+	}
+
+	header {
+		margin-top: 20px;
+	}
+}
+.addClass{
+	width: 50px;
+}
+
+.modalContent{
+	width: 100% !important;
+}
+
+.modalInput{
+	width: 80% !important;
+	margin: 0 auto 0 auto !important;
+	label{
+		max-width: 30% !important;
+	}
+	input{
+		max-width: 70% !important;
+	}
+}
+
+#cards-container {
+	display: flex;
+	justify-content: center !important;
+	margin: 0 auto 0 auto !important;
+}
+
+Card {
+	margin: 10px !important;
+}
+
+.card-element {
+	margin: .875em .5em !important;
+}
+
+.p-10 {
+	padding-right: 5px;
+}
+#ui.borderless.fluid.stackable.three.item.menu{
+	height: 50%;
+
+}
+
+#invalid-course-id {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.welcome_menu{
+	line-height: 43px !important;
+}
+
+.ui.tabular.fluid.menu{
+	justify-content: center;
+}
+
+.tab-content, .back_button{
+	color: #3c4e52;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.react-datepicker__time-list {
+	padding-left : 5% !important;
+}

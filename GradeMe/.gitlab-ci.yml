@@ -1,0 +1,19 @@
+image: localhost:5000/front_end_elgalu
+
+before_script:
+  - npm install
+
+variables:
+  DBUS_SESSION_BUS_ADDRESS: "/dev/null"
+
+stages:
+  - test
+  - report
+
+test_suite_1:
+  stage: test
+  script:
+   - nohup npm run dev &
+   - sleep 30
+   - npm test
+
